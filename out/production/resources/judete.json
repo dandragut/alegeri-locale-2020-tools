@@ -1,0 +1,170 @@
+[
+  {
+    "cod"  : "B",
+    "nume" : "București"
+  },
+  {
+    "cod"  : "AB",
+    "nume" : "Alba"
+  },
+  {
+    "cod"  : "AG",
+    "nume" : "Argeș"
+  },
+  {
+    "cod"  : "AR",
+    "nume" : "Arad"
+  },
+  {
+    "cod"  : "BC",
+    "nume" : "Bacău"
+  },
+  {
+    "cod"  : "BH",
+    "nume" : "Bihor"
+  },
+  {
+    "cod"  : "BN",
+    "nume" : "Bistrița-Năsăud"
+  },
+  {
+    "cod"  : "BR",
+    "nume" : "Brăila"
+  },
+  {
+    "cod"  : "BT",
+    "nume" : "Botoșani"
+  },
+  {
+    "cod"  : "BV",
+    "nume" : "Brașov"
+  },
+  {
+    "cod"  : "BZ",
+    "nume" : "Buzău"
+  },
+  {
+    "cod"  : "CJ",
+    "nume" : "Cluj"
+  },
+  {
+    "cod"  : "CL",
+    "nume" : "Călărași"
+  },
+  {
+    "cod"  : "CS",
+    "nume" : "Caraș-Severin"
+  },
+  {
+    "cod"  : "CT",
+    "nume" : "Constanța"
+  },
+  {
+    "cod"  : "CV",
+    "nume" : "Covasna"
+  },
+  {
+    "cod"  : "DB",
+    "nume" : "Dâmbovița"
+  },
+  {
+    "cod"  : "DJ",
+    "nume" : "Dolj"
+  },
+  {
+    "cod"  : "GJ",
+    "nume" : "Gorj"
+  },
+  {
+    "cod"  : "GL",
+    "nume" : "Galați"
+  },
+  {
+    "cod"  : "GR",
+    "nume" : "Giurgiu"
+  },
+  {
+    "cod"  : "HD",
+    "nume" : "Hunedoara"
+  },
+  {
+    "cod"  : "HR",
+    "nume" : "Harghita"
+  },
+  {
+    "cod"  : "IF",
+    "nume" : "Ilfov"
+  },
+  {
+    "cod"  : "IL",
+    "nume" : "Ialomița"
+  },
+  {
+    "cod"  : "IS",
+    "nume" : "Iași"
+  },
+  {
+    "cod"  : "MH",
+    "nume" : "Mehedinți"
+  },
+  {
+    "cod"  : "MM",
+    "nume" : "Maramureș"
+  },
+  {
+    "cod"  : "MS",
+    "nume" : "Mureș"
+  },
+  {
+    "cod"  : "NT",
+    "nume" : "Neamț"
+  },
+  {
+    "cod"  : "OT",
+    "nume" : "Olt"
+  },
+  {
+    "cod"  : "PH",
+    "nume" : "Prahova"
+  },
+  {
+    "cod"  : "SB",
+    "nume" : "Sibiu"
+  },
+  {
+    "cod"  : "SJ",
+    "nume" : "Sălaj"
+  },
+  {
+    "cod"  : "SM",
+    "nume" : "Satu Mare"
+  },
+  {
+    "cod"  : "SV",
+    "nume" : "Suceava"
+  },
+  {
+    "cod"  : "TL",
+    "nume" : "Tulcea"
+  },
+  {
+    "cod"  : "TM",
+    "nume" : "Timiș"
+  },
+  {
+    "cod"  : "TR",
+    "nume" : "Teleorman"
+  },
+  {
+    "cod"  : "VL",
+    "nume" : "Vâlcea"
+  },
+  {
+    "cod"  : "VN",
+    "nume" : "Vrancea"
+  },
+  {
+    "cod"  : "VS",
+    "nume" : "Vaslui"
+  }
+]

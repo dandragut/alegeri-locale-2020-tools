@@ -88,7 +88,7 @@ public class DescarcaDateXLS {
 
                 // Candidat...
                 Candidat candidat = Candidat.builder()
-                        .nume               (WordUtils.capitalizeFully(getCellValue(row, 9)) + " " + WordUtils.capitalizeFully(getCellValue(row, 10)))
+                        .nume               (WordUtils.capitalizeFully(getCellValue(row, 10), ' ', '-') + " " + WordUtils.capitalizeFully(getCellValue(row, 9)))
                         .functie            (Functie.fromExcel(getCellValue(row, 11)))
                         .partid             (Partid.fromExcel  (getCellValue(row, 5)))
                         .pozitieBuletin     (NumberUtils.createInteger(getCellValue(row, 6)))
@@ -101,6 +101,8 @@ public class DescarcaDateXLS {
                 String localitate = WordUtils.capitalizeFully(getCellValue(row, 13));
                 if (StringUtils.isNotBlank(localitate)) {
                     localitate = StringUtils.flattenAccents(localitate);
+                    localitate = StringUtils.removeStart(localitate, "Municipiul ");
+                    localitate = StringUtils.removeStart(localitate, "Orasul ");
                     localitate = StringUtils.replaceOnce(localitate, " De ",  " de ");
                     localitate = StringUtils.replaceOnce(localitate, " Cel ", " cel ");
                     localitati.add(localitate);
@@ -116,6 +118,9 @@ public class DescarcaDateXLS {
                         primariLocalitate.merge(candidat.getPozitieBuletin(), candidat, (k, v) -> {
                             throw new IllegalArgumentException("Duplicate key '" + k + "'.");
                         });
+                    }
+                    case CONSILIER_LOCAL -> {
+
                     }
                 }
             }
@@ -133,7 +138,7 @@ public class DescarcaDateXLS {
         JSON_WRITER_PRETTY.writeValue(file, localitati);
 
         // Presedinti CJ...
-        JSON_WRITER_PRETTY.writeValue(FileUtils.getFile(judetDir, "pcj.json"), presedintiConsiliulJudetean);
+        JSON_WRITER_PRETTY.writeValue(FileUtils.getFile(judetDir, "pcj.json"), presedintiConsiliulJudetean.values());
 
         // Primari...
         for (Map.Entry<String, Map<Integer, Candidat>> entry : primari.entrySet()) {

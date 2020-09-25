@@ -48,6 +48,11 @@ public class DescarcaDateXLS {
         final File judeteFile = Paths.get(OUTPUT_DIR.toString(), "judete.json").toFile();
         log.info("+ " + judeteFile.getCanonicalPath());
         JSON_WRITER_PRETTY.writeValue(judeteFile, Judete.judete);
+
+        // partide.json
+        final File partideFile = Paths.get(OUTPUT_DIR.toString(), "partide.json").toFile();
+        log.info("+ " + judeteFile.getCanonicalPath());
+        JSON_WRITER_PRETTY.writeValue(partideFile, Partid.values());
     }
 
     private static void proceseazaFisier(Judet judet) throws Exception {
